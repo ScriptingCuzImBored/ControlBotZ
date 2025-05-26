@@ -1,11 +1,4 @@
---[[
-██████╗ ██╗   ██╗    ███████╗██╗██╗  ██╗██████╗ ███████╗███╗   ██╗███╗   ██╗██╗   ██╗     ███████╗ ██████╗ ██╗  ██╗██╗  ██╗
-██╔══██╗╚██╗ ██╔╝    ██╔════╝██║╚██╗██╔╝██╔══██╗██╔════╝████╗  ██║████╗  ██║╚██╗ ██╔╝     ██╔════╝██╔═══██╗╚██╗██╔╝██║  ██║
-██████╔╝ ╚████╔╝     ███████╗██║ ╚███╔╝ ██████╔╝█████╗  ██╔██╗ ██║██╔██╗ ██║ ╚████╔╝      █████╗  ██║   ██║ ╚███╔╝ ███████║
-██╔══██╗  ╚██╔╝      ╚════██║██║ ██╔██╗ ██╔═══╝ ██╔══╝  ██║╚██╗██║██║╚██╗██║  ╚██╔╝       ██╔══╝  ██║   ██║ ██╔██╗ ╚════██║
-██████╔╝   ██║       ███████║██║██╔╝ ██╗██║     ███████╗██║ ╚████║██║ ╚████║   ██║███████╗██║     ╚██████╔╝██╔╝ ██╗     ██║
-╚═════╝    ╚═╝       ╚══════╝╚═╝╚═╝  ╚═╝╚═╝     ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═══╝   ╚═╝╚══════╝╚═╝      ╚═════╝ ╚═╝  ╚═╝     ╚═╝
-]]
+
 
 local TextChatService = game:GetService("TextChatService")
 local HttpService = game:GetService("HttpService")
@@ -54,10 +47,10 @@ if LocalPLR.Name ~= Username then
 
     end
 
-    chat("ControlBotZ Running!")
+    chat("GTX Alt Control Version 1.69 Loaded!")
     game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "Thank You",
-        Text = "Thank you for using ControlBotZ!",
+        Text = "Thank you for using GTXBot",
         Time = 6
     })
 
@@ -365,7 +358,7 @@ if LocalPLR.Name ~= Username then
         -- PRINTCMDS:
         if msg:sub(1, 10) == Prefix .. "printcmds" then
 
-            print("\n---------- CONTROLBOTZ CMDS ----------\n" .. request({ Url = "https://raw.githubusercontent.com/sixpennyfox4/rbx/refs/heads/main/ControlBotZ%20Cmds.txt", Method = "GET" }).Body)
+            print("\n---------- GTXBot CMDS ----------\n" .. request({ Url = "https://raw.githubusercontent.com/sixpennyfox4/rbx/refs/heads/main/ControlBotZ%20Cmds.txt", Method = "GET" }).Body)
             if index == 1 then
                 chat("Printed commands to the console!")
             end
@@ -632,7 +625,7 @@ if LocalPLR.Name ~= Username then
 
                 lpr.CFrame = CFrame.new(newPosition, player.Position)
 
-                chat("📸CAUGHT IN 4K📸")
+                chat("📸CAUGHT IN 4K LOOKING AT KIDS📸")
 
             end
         end
@@ -1607,7 +1600,7 @@ if LocalPLR.Name ~= Username then
         end
 
         -- RIZZ:
-        if msg:sub(1, 4) == Prefix .. "riz" then
+        if msg:sub(1, 4) == Prefix .. "rizz" then
 
             local rizzlines = {
                 "Can I be your snowflake? I promise to never melt away from your heart.",
@@ -2018,7 +2011,7 @@ if LocalPLR.Name ~= Username then
         if msg == Prefix .. "credits" then
 
             if index == 1 then
-                chat("This is a open source controlbot script made by sixpenny_fox4. Ḍ̲ị̲ṣ̲с̲ọ̲ṛ̲ḍ̲: Ẉ̲ɡ̲Ạ̲с̲Ṭ̲Ẓ̲ẓ̲Ṣ̲ṭ̲Ḅ̲")
+                chat("Alt Control Bot Script Made By GTX")
             end
 
         end
@@ -2064,7 +2057,7 @@ if LocalPLR.Name ~= Username then
                 if switch == "disable" then
                     RunService:Set3dRenderingEnabled(false)
 
-                    showDefaultGui(true, "ControlBotZ Running (3drender disabled)")
+                    showDefaultGui(true, "GTXBotRunning (3drender disabled)")
 
                     chat("3D Rendering Has Been Disabled On Bot " .. index .. "!")
                 elseif switch == "enable" then
@@ -2097,7 +2090,7 @@ if LocalPLR.Name ~= Username then
 
                     chat("Privacy Mode Has Been Disabled On Bot " .. index .. "!")
                 elseif switch == "enable" then
-                    showDefaultGui(true, "ControlBotZ Running (privacy mode enabled)")
+                    showDefaultGui(true, "GTXBot Running (privacy mode enabled)")
 
                     chat("Privacy Mode Has Been Enabled On Bot " .. index .. "!")
                 end
